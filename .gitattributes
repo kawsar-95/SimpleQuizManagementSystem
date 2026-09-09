@@ -1,0 +1,17 @@
+# Auto-detect text files and normalise line endings to LF on commit.
+* text=auto eol=lf
+
+# Shell scripts must always have LF endings.
+gradlew text eol=lf
+*.sh   text eol=lf
+
+# Gradle wrapper jar is binary.
+gradle/wrapper/gradle-wrapper.jar binary
+
+# Source code: keep LF on commit, allow mixed line endings in working copy.
+*.java       text eol=lf
+*.json       text eol=lf
+*.gradle     text eol=lf
+*.properties text eol=lf
+*.md         text eol=lf
+*.py         text eol=lf
