@@ -1,0 +1,37 @@
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!gradle/wrapper/gradle-wrapper.properties
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# Eclipse
+.classpath
+.project
+.settings/
+bin/
+
+# VS Code
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Local runtime state: the app copies seed JSON files into ./data on first run
+# and writes user-added questions there. Keep this folder out of version control.
+data/
+
+# Local data files generated at runtime (users.json / quiz.json are seed files;
+# uncomment the lines below to ignore runtime copies created inside the build dir)
+#build/resources/main/users.json
+#build/resources/main/quiz.json

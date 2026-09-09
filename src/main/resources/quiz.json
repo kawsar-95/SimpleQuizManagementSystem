@@ -1,0 +1,242 @@
+[
+  {
+    "question": "Which is not part of system testing?",
+    "option 1": "Regression Testing",
+    "option 2": "Sanity Testing",
+    "option 3": "Load Testing",
+    "option 4": "Unit Testing",
+    "answerkey": 4
+  },
+  {
+    "question": "Which is a white-box testing technique?",
+    "option 1": "Equivalence Partitioning",
+    "option 2": "Boundary Value Testing",
+    "option 3": "Decision Table Testing",
+    "option 4": "Adhoc Testing",
+    "answerkey": 3
+  },
+  {
+    "question": "Which testing level is performed by an independent test team?",
+    "option 1": "Unit Testing",
+    "option 2": "Integration Testing",
+    "option 3": "System Testing",
+    "option 4": "Acceptance Testing",
+    "answerkey": 3
+  },
+  {
+    "question": "What is the primary goal of regression testing?",
+    "option 1": "Re-test fixed defects",
+    "option 2": "Verify new changes did not break existing functionality",
+    "option 3": "Validate user requirements",
+    "option 4": "Measure performance under load",
+    "answerkey": 2
+  },
+  {
+    "question": "Which of the following is NOT a type of integration testing?",
+    "option 1": "Top-down integration",
+    "option 2": "Bottom-up integration",
+    "option 3": "Sandwich integration",
+    "option 4": "Smoke integration",
+    "answerkey": 4
+  },
+  {
+    "question": "The V-model links each development phase with:",
+    "option 1": "A coding activity",
+    "option 2": "A corresponding testing activity",
+    "option 3": "A deployment task",
+    "option 4": "A documentation milestone",
+    "answerkey": 2
+  },
+  {
+    "question": "Which metric measures the density of defects in a module?",
+    "option 1": "Defect removal efficiency",
+    "option 2": "Defects per KLOC",
+    "option 3": "Mean time to failure",
+    "option 4": "Test case effectiveness",
+    "answerkey": 2
+  },
+  {
+    "question": "Which testing technique uses input/output partitions?",
+    "option 1": "Boundary Value Analysis",
+    "option 2": "Equivalence Partitioning",
+    "option 3": "Decision Table Testing",
+    "option 4": "State Transition Testing",
+    "answerkey": 2
+  },
+  {
+    "question": "Smoke testing is also known as:",
+    "option 1": "Build verification testing",
+    "option 2": "Sanity testing",
+    "option 3": "Regression testing",
+    "option 4": "Acceptance testing",
+    "answerkey": 1
+  },
+  {
+    "question": "Which document describes the test items, test approach, and exit criteria?",
+    "option 1": "Test Case",
+    "option 2": "Test Plan",
+    "option 3": "Test Script",
+    "option 4": "Defect Report",
+    "answerkey": 2
+  },
+  {
+    "question": "Boundary value analysis focuses on values:",
+    "option 1": "In the middle of an equivalence partition",
+    "option 2": "At the edges of an equivalence partition",
+    "option 3": "That cause exceptions only",
+    "option 4": "That are random",
+    "answerkey": 2
+  },
+  {
+    "question": "Which of the following is a static testing technique?",
+    "option 1": "Unit Testing",
+    "option 2": "Integration Testing",
+    "option 3": "Code Review",
+    "option 4": "System Testing",
+    "answerkey": 3
+  },
+  {
+    "question": "Cyclomatic complexity measures the number of:",
+    "option 1": "Functions in a program",
+    "option 2": "Independent paths through source code",
+    "option 3": "Test cases required",
+    "option 4": "Variables declared",
+    "answerkey": 2
+  },
+  {
+    "question": "A test case that exercises the same path as another is called:",
+    "option 1": "Redundant",
+    "option 2": "Reusable",
+    "option 3": "Reliable",
+    "option 4": "Recursive",
+    "answerkey": 1
+  },
+  {
+    "question": "UAT stands for:",
+    "option 1": "Universal Application Testing",
+    "option 2": "User Acceptance Testing",
+    "option 3": "Unified Automated Testing",
+    "option 4": "Unit And integration Testing",
+    "answerkey": 2
+  },
+  {
+    "question": "Which of these is NOT part of the test process?",
+    "option 1": "Test Planning",
+    "option 2": "Test Design",
+    "option 3": "Test Estimation",
+    "option 4": "Test Marketing",
+    "answerkey": 4
+  },
+  {
+    "question": "A defect that is found and fixed before release is known as:",
+    "option 1": "A bug",
+    "option 2": "A residual defect",
+    "option 3": "A known error",
+    "option 4": "An incident",
+    "answerkey": 1
+  },
+  {
+    "question": "Which testing technique uses cause-effect graphs?",
+    "option 1": "Equivalence Partitioning",
+    "option 2": "Boundary Value Analysis",
+    "option 3": "Decision Table Testing",
+    "option 4": "Statement Testing",
+    "answerkey": 3
+  },
+  {
+    "question": "Which of the following is non-functional testing?",
+    "option 1": "Unit Testing",
+    "option 2": "Integration Testing",
+    "option 3": "Performance Testing",
+    "option 4": "System Testing",
+    "answerkey": 3
+  },
+  {
+    "question": "What does code coverage measure?",
+    "option 1": "Lines of code written",
+    "option 2": "Percentage of code executed by tests",
+    "option 3": "Number of test cases",
+    "option 4": "Defects found per day",
+    "answerkey": 2
+  },
+  {
+    "question": "Which severity level describes a defect that crashes the system?",
+    "option 1": "Low",
+    "option 2": "Medium",
+    "option 3": "High",
+    "option 4": "Critical",
+    "answerkey": 4
+  },
+  {
+    "question": "In a decision table, each column represents:",
+    "option 1": "A condition",
+    "option 2": "An action",
+    "option 3": "A test case",
+    "option 4": "A rule",
+    "answerkey": 4
+  },
+  {
+    "question": "Which test type focuses on finding defects during the earliest possible phase?",
+    "option 1": "Shift-right testing",
+    "option 2": "Shift-left testing",
+    "option 3": "End-to-end testing",
+    "option 4": "Smoke testing",
+    "answerkey": 2
+  },
+  {
+    "question": "Which of these is a black-box testing technique?",
+    "option 1": "Statement coverage",
+    "option 2": "Branch coverage",
+    "option 3": "Equivalence Partitioning",
+    "option 4": "Path coverage",
+    "answerkey": 3
+  },
+  {
+    "question": "Test-Driven Development (TDD) follows which cycle?",
+    "option 1": "Code -> Test -> Refactor",
+    "option 2": "Test -> Code -> Refactor",
+    "option 3": "Design -> Code -> Test",
+    "option 4": "Refactor -> Test -> Code",
+    "answerkey": 2
+  },
+  {
+    "question": "A test that fails occasionally because of timing is called:",
+    "option 1": "A flaky test",
+    "option 2": "A brittle test",
+    "option 3": "A slow test",
+    "option 4": "A dirty test",
+    "answerkey": 1
+  },
+  {
+    "question": "Which artifact contains the steps, data, and expected results of a test?",
+    "option 1": "Test plan",
+    "option 2": "Test case",
+    "option 3": "Test summary report",
+    "option 4": "Test charter",
+    "answerkey": 2
+  },
+  {
+    "question": "Which is the BEST description of exploratory testing?",
+    "option 1": "Running pre-written scripts",
+    "option 2": "Simultaneous learning, test design, and execution",
+    "option 3": "Automated regression only",
+    "option 4": "Performance benchmarking",
+    "answerkey": 2
+  },
+  {
+    "question": "The ISTQB definition of testing states that testing is:",
+    "option 1": "The process of confirming that software is bug-free",
+    "option 2": "The process of executing software to find defects",
+    "option 3": "The process of demonstrating that software works correctly",
+    "option 4": "The process of releasing software to users",
+    "answerkey": 2
+  },
+  {
+    "question": "Pairwise testing is also known as:",
+    "option 1": "All-pairs testing",
+    "option 2": "Stress testing",
+    "option 3": "Recovery testing",
+    "option 4": "Volume testing",
+    "answerkey": 1
+  }
+]
