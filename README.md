@@ -27,11 +27,14 @@ SimpleQuizManagementSystem/
 ├── build.gradle                          # Gradle build script (java + application plugins)
 ├── settings.gradle                       # Project name
 ├── gradlew                               # POSIX wrapper script
+├── gradlew.bat                           # Windows wrapper script
 ├── gradle/
 │   └── wrapper/
 │       ├── gradle-wrapper.jar
 │       └── gradle-wrapper.properties     # Pins Gradle 8.10.2
+├── LICENSE                               # MIT license
 ├── .gitignore                            # Ignores .idea, .gradle, build, ...
+├── .gitattributes                        # Normalises line endings
 ├── README.md                             # ← you are here
 ├── integration_test.py                   # End-to-end driver (Python)
 └── src/
@@ -46,9 +49,13 @@ SimpleQuizManagementSystem/
         │   ├── AuthService.java          # Login flow + credential check
         │   ├── AdminService.java         # Add-question loop
         │   └── StudentService.java       # Quiz + scoring + grading
-        └── resources/
-            ├── users.json                # Seed credentials (admin / salman)
-            └── quiz.json                 # Seed question bank (30 SQA MCQs)
+        ├── resources/
+        │   ├── users.json                # Seed credentials (admin / salman)
+        │   └── quiz.json                 # Seed question bank (30 SQA MCQs)
+        └── ../test/java/com/quizms/      # JUnit 5 unit tests
+            ├── QuestionTest.java         # Tests the Question record
+            ├── JsonStoreTest.java        # Round-trips JSON, schema & error paths
+            └── SeedQuestionsTest.java    # Asserts ≥30 SQA questions & valid keys
 ```
 
 At runtime the application creates a `data/` folder in the current working
@@ -215,17 +222,34 @@ answer key, and the next question is presented.
 
 ## Testing
 
-A Python end-to-end driver is provided at `integration_test.py`. It re-seeds
-the data files, runs the fat JAR, simulates an admin adding a new question and
-a student answering the quiz, then asserts that:
+### JUnit 5 unit tests
 
-1. `data/quiz.json` grew by exactly one question after the admin flow.
-2. The appended question matches what the admin typed.
-3. A `... out of 10` score line is printed.
+```bash
+./gradlew test
+```
+
+The suite covers:
+
+| Test class           | What it asserts                                                  |
+| -------------------- | ---------------------------------------------------------------- |
+| `QuestionTest`       | The `Question` record returns its constructor values              |
+| `JsonStoreTest`      | Round-trips questions through JSON; missing/malformed files fail; output schema matches the assignment (`question`, `option 1`-`option 4`, `answerkey`) |
+| `SeedQuestionsTest`  | The bundled `quiz.json` contains **≥ 30** questions, every answer key is in `[1, 4]`, and every option is non-blank |
+
+All 9 tests pass on the reference machine.
+
+### End-to-end driver (Python)
 
 ```bash
 python3 integration_test.py
 ```
+
+Re-seeds the data files, runs the fat JAR, simulates an admin adding a new
+question and a student answering the quiz, then asserts that:
+
+1. `data/quiz.json` grew by exactly one question after the admin flow.
+2. The appended question matches what the admin typed.
+3. A `... out of 10` score line is printed.
 
 ---
 

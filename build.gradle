@@ -19,6 +19,9 @@ repositories {
 dependencies {
     // Minimal JSON library for reading/writing users.json and quiz.json
     implementation 'com.googlecode.json-simple:json-simple:1.1.1'
+
+    // Unit tests
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.10.2'
 }
 
 application {
@@ -42,4 +45,9 @@ tasks.withType(JavaCompile).configureEach {
 }
 tasks.withType(Test).configureEach {
     systemProperty 'file.encoding', 'UTF-8'
+    useJUnitPlatform()
+    testLogging {
+        events 'passed', 'failed', 'skipped'
+        showStandardStreams = false
+    }
 }
